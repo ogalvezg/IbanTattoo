@@ -1,0 +1,29 @@
+.DS_Store
+
+docs/*
+!docs/README.md
+test/message.txt
+test/testbootstrap.php
+build/
+vendor/
+*.pem
+composer.lock
+.php_cs.cache
+
+# Mono auto generated files
+mono_crash.*
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs
