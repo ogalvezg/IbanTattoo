@@ -391,11 +391,6 @@ section {
         
     }
 
-    /* Hero Section */
-    .title {
-        font-size: 8rem;
-    }
-
 
     .hamburger-menu {
         display: none;
@@ -426,6 +421,11 @@ section {
         transition: .6s all ease !important; 
     }
 
+    /* Hero Section */
+    .title {
+        font-size: 8rem;
+    }
+    
     /* gallery section */
     .gallery {
         height: 100%;
