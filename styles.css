@@ -351,7 +351,18 @@ section {
     letter-spacing: normal;
 }
 
+form #error_message {
+    margin-bottom: 1.5rem;
+    color: #000000;
+    padding: 1rem;
+    background: #fe8b8e;
+    text-align: center;
+    transition: all 0.5s ease;
+}
 
+#imprint {
+    padding: 2rem 4rem;
+}
 /* Footer 
 .footer {
     padding: 5rem 0;

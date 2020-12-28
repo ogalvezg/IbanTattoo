@@ -106,7 +106,7 @@
                     <div class="tattoo-wrap">
                         <img src="./images/girl-wings.jpg" alt="">
                     </div>
-                    <form id="form" name="form" method="POST" class="form contact-form">
+                    <form id="form" name="form" method="POST" class="form contact-form" onsubmit="return validation()">
                         <div class="input-group-wrap">
                             <div class="input-group">
                                 <input id="username" name="username" type="text" class="input" placeholder="Name" onkeyup="lettersOnly(this)" required>
@@ -127,11 +127,20 @@
                             </div>
                         </div>
                         
+
                         <button class="btn form-btn"> Send message</button>
                     </form>
                 </div>
             </div>
         </section>
+
+        <footer>
+            <div class="container">
+                
+                <a href="impressum.html">Impressum</a>
+            </div>
+            
+        </footer>
     </main>
     
     <script src="main.js"></script>
