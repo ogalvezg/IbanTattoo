@@ -189,7 +189,7 @@ section {
     margin-bottom: 2rem;
 }
 
-.fab {
+.fab, .far {
     font-size: 2rem;
 }
 
@@ -358,6 +358,85 @@ form #error_message {
     background: #fe8b8e;
     text-align: center;
     transition: all 0.5s ease;
+}
+
+/* FOOTER */
+footer {
+    position: relative;
+    padding: 5rem 0;
+    background: #1a1a1a;
+    /*display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;*/
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.sec:not(:last-child) {
+    margin-right: 3rem;
+}
+
+h3 {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+h3:before {
+    content: '';
+    position: absolute;
+    text-align: center;
+    bottom: -5px;
+    width: 5rem;
+    height: 1px;
+    background: #fff;
+}
+
+.aboutme {
+    width: 37%;
+    padding-left: 3rem;
+}
+
+.me {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.navigation {
+    padding-left: 1rem;
+    width: 25%;
+}
+
+.contactme {
+    padding-left: 7rem;
+    width: 25%;
+}
+
+.nav-foot {
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.fa-foot {
+    margin-right: 1rem;
+}
+
+img.email {
+    width: 82%;
+    height: auto;
+}
+
+.copy {
+    width: 100%;
+    margin-top: 3rem;
+    text-align: center;
 }
 
 #imprint {
@@ -555,6 +634,30 @@ form #error_message {
     .contact-form {
         flex: 0 0 50%;
         align-self: flex-start;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 3rem 0;
+    }
+    
+    .sec:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    .aboutme {
+        width: 37%;
+        padding-left: 1rem;
+    }
+    
+    .navigation {
+        padding-left: 3rem;
+        width: 25%;
+    }
+    
+    .contactme {
+        padding-left: 3rem;
+        width: 25%;
     }
 
     
