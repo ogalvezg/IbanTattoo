@@ -15,7 +15,7 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: whitesmoke;
     background: #0d0d0d;
 }
@@ -30,7 +30,7 @@ ul {
 }
 
 section {
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 /* Reusable styles */ 
@@ -42,9 +42,9 @@ section {
 }
 
 .btn {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    padding: .7rem 2.5rem;
+    padding: .5rem 1.5rem;
     border: 2px solid whitesmoke;
     border-radius: 10rem;
 }
@@ -52,12 +52,13 @@ section {
 .heading {
     font-family: 'Russo One', sans-serif;
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.5rem;
     display: block;
+    margin-bottom: 2rem;
 }
 
 .sub-heading {
-    font-size: 1.7rem;
+    display: none;
 }
 
 /* Header */
@@ -87,15 +88,15 @@ section {
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     font-family: 'Russo One', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #fff;
     max-width: 80%;
 }
 
 .hamburger-menu {
-    font-size: 2.6rem;
+    font-size: 1.7rem;
     color: #fff;
     cursor: pointer;
     position: relative;
@@ -143,7 +144,7 @@ section {
 .nav-link {
     display: block;
     color: #fff;
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: 2px;
     padding: 1rem;
@@ -168,6 +169,7 @@ section {
     font-size: 4.8rem;
     font-family: 'Russo One', sans-serif;
     letter-spacing: 3px;
+    display: none;
 }
 
 .subtitle {
@@ -175,35 +177,39 @@ section {
     font-weight: 700;
     letter-spacing: 3px;
     margin-bottom: 2rem;
+    display: none;
 }
 
 .btn-sm {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    top: -5vh;
+    
 }
 
 .btn-fb,
 .btn-ig {
-    max-width: 40%;
+    max-width: 50%;
     margin-bottom: 2rem;
 }
 
 .fab, .far {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .fb {
-    margin-left: .8rem;
+    margin-left: .5rem;
     letter-spacing: 1px;
 }
 
 .ig {
-    margin-left: .3rem;
+    margin-left: .2rem;
 }
 
 .btn-fb {
-    padding: .7rem 3.3rem;
+    padding: .5rem 2rem;
 }
 
 .btn-fb:hover {
@@ -217,22 +223,11 @@ section {
 }
 
 /* Tattoos */
-.tattoos {
-    margin: 3rem 0;
-}
-.heading {
-    font-family: 'Russo One', sans-serif;
-    text-align: center;
-    font-size: 4rem;
-    display: block;
-}
-
 .gallery {
     height: auto;
     width: 90%;
     display: block;
     margin: auto;
-    padding: 2rem 0;
 }
 
 
@@ -242,7 +237,7 @@ section {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .item-2,
@@ -254,7 +249,6 @@ section {
 /* Contact */
 .section-head {
     text-align: center;
-    margin-bottom: 5rem;
 }
 .contact-content {
     display: flex;
@@ -284,15 +278,6 @@ section {
     margin-bottom: 1.5rem;
 }
 
-/*.input-label {
-    display: block;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}*/
-
 .input, 
 .options {
     outline: none;
@@ -302,8 +287,9 @@ section {
     padding: 1rem;
     font-weight: bold;
     color: #fff;
-    font-size: 1.5rem;
-    letter-spacing: 1.5px;
+    font-size: 1.1rem;
+    font-weight: 100;
+    letter-spacing: 1px;
     font-family: "Open Sans", sans-serif;
     /*resize: none;*/
 }
@@ -351,14 +337,6 @@ section {
     letter-spacing: normal;
 }
 
-form #error_message {
-    margin-bottom: 1.5rem;
-    color: #000000;
-    padding: 1rem;
-    background: #fe8b8e;
-    text-align: center;
-    transition: all 0.5s ease;
-}
 
 /* FOOTER */
 footer {
@@ -371,69 +349,49 @@ footer {
 }
 
 .footer {
+    margin: 0 2rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.sec:not(:last-child) {
-    margin-right: 3rem;
+    flex-direction: column;
 }
 
 h3 {
-    position: relative;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-bottom: 2rem;
 }
 
-h3:before {
-    content: '';
-    position: absolute;
-    text-align: center;
-    bottom: -5px;
-    width: 5rem;
-    height: 1px;
-    background: #fff;
-}
-
-.aboutme {
-    width: 37%;
-    padding-left: 3rem;
+.sec {
+    width: 100%;
+    margin-bottom: 3rem;
 }
 
 .me {
-    font-size: 2rem;
+    font-size: 1.1rem;
     font-weight: 200;
 }
 
-.navigation {
-    padding-left: 1rem;
-    width: 25%;
-}
-
-.contactme {
-    padding-left: 7rem;
-    width: 25%;
-}
 
 .nav-foot {
+    font-size: 1.1rem;
+    font-weight: 100;
     letter-spacing: 1px;
     margin-bottom: 1rem;
 }
 
-.fa-foot {
-    margin-right: 1rem;
+.nav-foot:hover {
+    font-weight: 600;
 }
 
-img.email {
-    width: 82%;
-    height: auto;
+.fa-foot {
+    margin-right: .5rem;
 }
 
 .copy {
+    font-size: .9rem;
+    font-weight: 200;
     width: 100%;
     margin-top: 3rem;
     text-align: center;
@@ -442,50 +400,86 @@ img.email {
 #imprint {
     padding: 2rem 4rem;
 }
-/* Footer 
-.footer {
-    padding: 5rem 0;
-}
 
-.footer-content-brand {
-    margin-bottom: 5rem;
-}
+@media only screen and (min-width: 700px) {
+    /* Nav Bar */
+    .logo {
+        font-size: 2.2rem;
+    }
+    
+    .hamburger-menu {
+        font-size: 2rem;  
+    }
 
-.footer .paragraph {
-    color: inherit;
-}
+    /*main */
+    .heading {
+        font-size: 3rem;
 
-.footer-heading {
-    text-transform: uppercase;
-    margin-bottom: 2.5rem;
-}
+    }
+    
+    .sub-heading {
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
 
-.social-media {
-    display: flex;
-}
+     /* FOOTER */
+     footer {
+        padding: 2rem 0;
+    }
 
-.sm-link {
-    width: 4rem;
-    height: 4rem;
-    font-size: 2rem;
-    border: 2px solid var(--yellow-solid);
-    border-radius: 50%;
-    display: flex;
-    margin-right: 1rem;
-    transition: background-color .5s;
-}
+    .footer {
+        flex-direction: row;
+    }
 
-.sm-link:hover {
-    background-color: var(--yellow-solid);
-    color: var(--dark-color);
-}
+    h3 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
 
-.sm-link i {
-    margin: auto;
-}*/
+
+    .aboutme {
+        width: 37%;
+        padding-left: 1rem;
+    }
+    
+    .navigation {
+        width: 25%;
+        padding-left: 3rem;
+    }
+
+    .nav-foot {
+        font-size: 1.4rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+    }
+    .link {
+        font-size: 1.2rem;
+    }
+    
+    .contactme {
+        width: 25%;
+    }
+
+    .copy {
+        font-size: 1.1rem;
+        font-weight: 300;
+        margin-top: 3rem;
+    }
+
+}
 
 @media only screen and (min-width: 800px) {
 
+    .btn {
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: .7rem 2.5rem;
+        border: 2px solid whitesmoke;
+        border-radius: 10rem;
+    }
     /* Header */
     .logo {
         font-size: 3.5rem;
@@ -497,6 +491,7 @@ img.email {
     .hamburger-menu {
         display: none;
     }
+
     .nav-list {
         position: initial;
         width: initial;
@@ -527,8 +522,24 @@ img.email {
     .title {
         font-size: 8rem;
     }
+
+    .title {
+        font-size: 4.8rem;
+        font-family: 'Russo One', sans-serif;
+        letter-spacing: 3px;
+    }
+    
+    .subtitle {
+        font-size: 3.6rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        margin-bottom: 2rem;
+    }
     
     /* gallery section */
+    .tattoos {
+        margin: 3rem 0;
+    }
     .gallery {
         height: 100%;
         width: 100%;
@@ -636,29 +647,50 @@ img.email {
         align-self: flex-start;
     }
 
-    /* FOOTER */
     footer {
         padding: 3rem 0;
     }
     
-    .sec:not(:last-child) {
-        margin-right: 1rem;
+    .footer {
+        margin: 2rem 1rem;
     }
-
+    
+    h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        margin-bottom: 2rem;
+    }
+   
     .aboutme {
         width: 37%;
-        padding-left: 1rem;
+        padding: 0 5rem;
+    }
+    
+    .me {
+        font-size: 1.4rem;
+        font-weight: 200;
     }
     
     .navigation {
         padding-left: 3rem;
-        width: 25%;
+        width: 23%;
     }
     
     .contactme {
         padding-left: 3rem;
-        width: 25%;
+        width: 27%;
     }
-
+    
+    .nav-foot {
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+    }
+    
+    .fa-foot {
+        margin-right: 1rem;
+    }
+    
     
 }
+
