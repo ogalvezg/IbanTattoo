@@ -17,9 +17,3 @@ navList.addEventListener('click', function () {
     header.classList.toggle('menu-open');
 });
 
-
-// Form validation
-function lettersOnly(input) {
-    var regex = /[^a-z]/gi;  // regular expression that apply global flag along with an ignore case flag
-    input.value = input.value.replace(regex, "");
-};
