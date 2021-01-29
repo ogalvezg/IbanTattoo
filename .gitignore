@@ -1,5 +1,8 @@
 .DS_Store
 
+.vscode
+
+
 docs/*
 !docs/README.md
 test/message.txt
